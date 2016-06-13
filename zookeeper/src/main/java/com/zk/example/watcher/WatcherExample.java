@@ -33,7 +33,7 @@ public class WatcherExample implements Watcher {
 			ZooKeeper	zk = new ZooKeeper(wx.getZkpath(),10000, wx);
 			zk.getChildren("/node7",true);
 			Thread.sleep(300000);
-			System.out.println("睡眠结束");
+			System.out.println("睡眠结束了");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
