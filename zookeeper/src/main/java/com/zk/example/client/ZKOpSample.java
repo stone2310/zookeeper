@@ -87,8 +87,7 @@ public class ZKOpSample {
 		// TODO Auto-generated method stub
 		ZKOpSample zks = new ZKOpSample("localhost:2181");
 		// 所有人都可以访问的节点
-//		 zks.testCreateNode("/acl/javaclient/node1",
-//		 "node1data".getBytes(),Ids.OPEN_ACL_UNSAFE);
+		 zks.testCreateNode("/acl/javaclient/node1","node1data".getBytes(),Ids.OPEN_ACL_UNSAFE);
 	
 		// 只有被认证过的人都可以访问
 //		 zks.getZk().addAuthInfo("digest", "javaclient1:111111".getBytes());
