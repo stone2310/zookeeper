@@ -9,7 +9,7 @@ public class DigestTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			System.out.print(DigestAuthenticationProvider.generateDigest("zyh4:111111"));
+			System.out.print(DigestAuthenticationProvider.generateDigest("zyh1:111111"));
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
