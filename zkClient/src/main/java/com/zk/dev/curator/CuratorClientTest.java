@@ -110,16 +110,16 @@ public class CuratorClientTest {
 		CuratorClientTest ct = null;
 		try {
 			ct = new CuratorClientTest();
-//			 ct.createNode("/curator/test1", "test-node1".getBytes());
-			//ct.readNode("/curator/test/node1");
-			//ct.getChildren("/curator");
-			// ct.updateNode("/curator/test/node1", "test-node1-new".getBytes(),
-			// 0);
-			// ct.readNode("/curator/test/node1");
+			 ct.createNode("/curator/test1", "test-node1".getBytes());
+			ct.readNode("/curator/test/node1");
+			ct.getChildren("/curator");
+			 ct.updateNode("/curator/test/node1", "test-node1-new".getBytes(),
+			 0);
+			 ct.readNode("/curator/test/node1");
 			 ct.deleteNode("/curator", 1);
 
-//			ct.addNodeDataWatcher("/curator/test7");
-//			ct.addChildWatcher("/curator");
+			ct.addNodeDataWatcher("/curator/test7");
+			ct.addChildWatcher("/curator");
 			Thread.sleep(30000);
 		} catch (Exception e) {
 			e.printStackTrace();
