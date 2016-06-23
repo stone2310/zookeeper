@@ -27,7 +27,7 @@ public class CuratorClientTestMe {
 	
 	public CuratorClientTestMe(){
 		RetryPolicy retryPolicy=new ExponentialBackoffRetry(1000,3);
-		client=CuratorFrameworkFactory.builder().connectString("192.168.145.128:2181,192.168.145.128:2182,192.168.145.128:2183")
+		client=CuratorFrameworkFactory.builder().connectString("192.168.3.71:2181")
 				.sessionTimeoutMs(10000).retryPolicy(retryPolicy).connectionTimeoutMs(15000).namespace("base").build();
 		client.start();
 		
@@ -166,7 +166,7 @@ public class CuratorClientTestMe {
 		try {
 			cctm.addChildWatch("/curator");
 			Thread.sleep(2000);
-			cctm.creatNode("/curator/test2", "test2");
+//			cctm.creatNode("/curator/test2", "test2");
 			Thread.sleep(2000);
 			cctm.setData("/curator/test2", 0, "test2new");
 			Thread.sleep(2000);
