@@ -13,17 +13,17 @@ public class TestControll {
 
 	@RequestMapping("test.do")
 	public void testM(HttpServletResponse response) {
-		outputData(response,"测试成功");
+		outputData(response,"娴嬭瘯鎴愬姛");
 		System.out.println("----------test.do-----------");
 	}
 	@RequestMapping("testtwo.do")
 	public void sample(HttpServletResponse response) {
-		outputData(response,"测试成功testtwo.do");
+		outputData(response,"娴嬭瘯鎴愬姛testtwo.do");
 		System.out.println("--------testtwo.do-------------");
 	}
 	@RequestMapping("testthree.do")
 	public void three(HttpServletResponse response) {
-		outputData(response,"测试成功testthree.do");
+		outputData(response,"娴嬭瘯鎴愬姛testthree.do");
 		System.out.println("--------testthree.do-------------");
 	}
 	
