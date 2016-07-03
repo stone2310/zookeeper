@@ -20,7 +20,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 
 
 public class ServiceConsumer {
-	private String connectString ="localhost:2181,localhost:2182,localhost:2183";
+	private String connectString ="192.168.3.71:2181";
 	private CuratorFramework client = null;
 	Map<String,Set<String>> services = new HashMap<String,Set<String>>();
 	Map<String,Set<String>> servicesByP = new HashMap<String,Set<String>>();
@@ -171,7 +171,7 @@ public class ServiceConsumer {
 				srsadds = new ArrayList<String>();
 				srsadds.addAll(services.get(sr));
 				Collections.shuffle(srsadds);
-				spath ="http://"+srsadds.get(0)+":8081/configManagement"+sr;
+				spath ="http://"+srsadds.get(0)+":8080/configManagement"+sr;
 				System.out.println("access path="+spath);
 				String res ="";
 				try {
